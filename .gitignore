@@ -1,0 +1,30 @@
+# Secrets and local configuration
+.env
+*.env
+!.env.example
+
+# Python
+.venv/
+**/.venv/
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/tsconfig.tsbuildinfo
+
+# IDE and local agent settings
+.idea/
+.vscode/
+.claude/
+
+# Local backup of the previous README
+原始README.md
+
+# OS files
+.DS_Store
+Thumbs.db

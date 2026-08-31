@@ -1,0 +1,8 @@
+{"text": "你的密钥是 ak_live_abcd1234ef5678 请保管好", "types": ["api_key"]}
+{"text": "secret_key=topSecret123 不要泄露", "types": ["secret"]}
+{"text": "授权头 Bearer eyJhbG12345tokenABC", "types": ["token"]}
+{"text": "联系电话13912345678", "types": ["phone"]}
+{"text": "邮箱 zhangsan@example.com", "types": ["email"]}
+{"text": "身份证110101199001012345", "types": ["idcard"]}
+{"text": "签名 a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6", "types": ["signature"]}
+{"text": "这是一段没有敏感信息的正常文本", "types": []}
