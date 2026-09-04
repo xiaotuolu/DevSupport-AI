@@ -1,6 +1,16 @@
-# DevSupport AI · 面向 API 开放平台的多 Agent 智能客服系统
+# 🛠️ DevSupport AI · 面向 API 开放平台的多 Agent 智能客服系统
 
-[![GitHub stars](https://img.shields.io/github/stars/xiaotuolu/DevSupport-AI?style=social)](https://github.com/xiaotuolu/DevSupport-AI)
+<p align="center">
+  <a href="https://github.com/xiaotuolu/DevSupport-AI"><img src="https://img.shields.io/github/stars/xiaotuolu/DevSupport-AI?style=social" alt="GitHub Stars"></a>
+  <a href="https://python.org"><img src="https://img.shields.io/badge/Python-3.11+-3776AB?logo=python&amp;logoColor=white" alt="Python 3.11+"></a>
+  <a href="https://fastapi.tiangolo.com"><img src="https://img.shields.io/badge/FastAPI-0.115+-009688?logo=fastapi&amp;logoColor=white" alt="FastAPI 0.115+"></a>
+  <a href="https://github.com/langchain-ai/langgraph"><img src="https://img.shields.io/badge/LangGraph-Multi--Agent-6B46C1" alt="LangGraph Multi-Agent"></a>
+  <a href="https://react.dev"><img src="https://img.shields.io/badge/React-18+-61DAFB?logo=react&amp;logoColor=black" alt="React 18+"></a>
+  <a href="https://milvus.io"><img src="https://img.shields.io/badge/Milvus-2.4+-00A1EA" alt="Milvus 2.4+"></a>
+  <a href="https://redis.io"><img src="https://img.shields.io/badge/Redis-7+-DC382D?logo=redis&amp;logoColor=white" alt="Redis 7+"></a>
+  <a href="https://www.mysql.com"><img src="https://img.shields.io/badge/MySQL-8.0+-4479A1?logo=mysql&amp;logoColor=white" alt="MySQL 8.0+"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-F4C430.svg" alt="MIT License"></a>
+</p>
 
 如果这个项目对你的学习、研究或 Agent 相关面试准备有帮助，欢迎点一个 Star，也欢迎提交 Issue 分享建议。
 
@@ -8,36 +18,30 @@
 
 开发者提出 API 接入问题 → AI 识别意图 → 多 Agent 协同查文档、查日志、查账单 → 输出诊断结论和修复步骤 → 复杂/高风险问题自动建单转人工。
 
-[![Python](https://img.shields.io/badge/Python-3.11+-blue?logo=python)](https://python.org)
-[![FastAPI](https://img.shields.io/badge/FastAPI-0.115+-teal?logo=fastapi)](https://fastapi.tiangolo.com)
-[![LangGraph](https://img.shields.io/badge/LangGraph-Multi--Agent-orange)](https://github.com/langchain-ai/langgraph)
-[![React](https://img.shields.io/badge/React-18+-61dafb?logo=react)](https://react.dev)
-[![Milvus](https://img.shields.io/badge/Milvus-2.4+-green)](https://milvus.io)
-[![Redis](https://img.shields.io/badge/Redis-7+-red?logo=redis)](https://redis.io)
-[![MySQL](https://img.shields.io/badge/MySQL-8.0+-4479A1?logo=mysql&logoColor=white)](https://www.mysql.com)
+---
+
+## 📖 目录
+
+- [🌟 项目简介](#-项目简介)
+- [💡 核心场景](#-核心场景)
+- [🎬 功能展示](#-功能展示)
+- [🧭 功能演示入口](#-功能演示入口)
+- [✨ 技术亮点与实现边界](#-技术亮点与实现边界)
+- [🏗️ 系统架构](#️-系统架构)
+- [🔄 多 Agent 工作流](#-多-agent-工作流)
+- [🔍 RAG 检索链路](#-rag-检索链路)
+- [📂 项目结构](#-项目结构)
+- [🎓 面试准备资料](#-面试准备资料)
+- [📊 评估与本地基准](#-评估与本地基准)
+- [🛡️ 安全边界与当前限制](#️-安全边界与当前限制)
+- [🚀 快速启动](#-快速启动)
+- [🛠️ 常用命令](#️-常用命令)
+- [🧰 核心技术栈](#-核心技术栈)
+- [📄 许可证](#-许可证)
 
 ---
 
-## 目录
-
-- [项目简介](#项目简介)
-- [核心场景](#核心场景)
-- [功能展示](#功能展示)
-- [功能演示入口](#功能演示入口)
-- [技术亮点与实现边界](#技术亮点与实现边界)
-- [系统架构](#系统架构)
-- [多 Agent 工作流](#多-agent-工作流)
-- [RAG 检索链路](#rag-检索链路)
-- [项目结构](#项目结构)
-- [面试准备资料](#面试准备资料)
-- [评估与本地基准](#评估与本地基准)
-- [安全边界与当前限制](#安全边界与当前限制)
-- [快速启动](#快速启动)
-- [核心技术栈](#核心技术栈)
-
----
-
-## 项目简介
+## 🌟 项目简介
 
 DevSupport AI 是一个面向 API 开放平台开发者的多 Agent 智能技术支持系统，帮助使用第三方 API 的开发者处理数据查询、身份认证、风控评分、企业认证和 Webhook 回调等接入问题。
 
@@ -47,22 +51,22 @@ DevSupport AI 是一个面向 API 开放平台开发者的多 Agent 智能技术
 
 本项目将这些能力整合进一个多 Agent 系统：
 
-- 能理解开发者的自然语言问题。
-- 能检索 API 文档并生成带引用回答。
-- 能查询调用日志、API Key 状态和错误码。
-- 能解释套餐、调用量和账单变化。
-- 能在不确定或高风险时自动创建工单转人工。
-- 能对 API Key、Token、手机号、邮箱等敏感信息进行识别和脱敏处理。
+- 🧭 能理解开发者的自然语言问题。
+- 📚 能检索 API 文档并生成带引用回答。
+- 🔎 能查询调用日志、API Key 状态和错误码。
+- 💳 能解释套餐、调用量和账单变化。
+- 🎫 能在不确定或高风险时自动创建工单转人工。
+- 🛡️ 能对 API Key、Token、手机号、邮箱等敏感信息进行识别和脱敏处理。
 
 一句话概括：**把 API 文档、调用日志、错误码、套餐账单、工单系统和安全脱敏，编排成一个可运行、可观测、可评估的多 Agent 智能客服系统。**
 
 ---
 
-## 功能展示
+## 🎬 功能展示
 
 以下截图来自本地演示环境，页面中的账号、工单号、请求 ID 和 API Key 均为演示数据或脱敏数据。
 
-### 登录与客户侧智能助手
+### 💬 登录与客户侧智能助手
 
 ![登录页](docs/images/Snipaste_2026-08-31_11-04-21.png)
 
@@ -72,7 +76,7 @@ DevSupport AI 是一个面向 API 开放平台开发者的多 Agent 智能技术
 
 ![转人工并创建工单](docs/images/Snipaste_2026-08-31_11-07-11.png)
 
-### 工单与内部技术支持工作台
+### 🎫 工单与内部技术支持工作台
 
 ![工单列表](docs/images/Snipaste_2026-08-31_11-09-12.png)
 
@@ -80,7 +84,7 @@ DevSupport AI 是一个面向 API 开放平台开发者的多 Agent 智能技术
 
 ---
 
-## 功能演示入口
+## 🧭 功能演示入口
 
 登录后可以按角色访问以下页面。内部工作台和运营指标仅对内部角色开放。
 
@@ -95,7 +99,7 @@ DevSupport AI 是一个面向 API 开放平台开发者的多 Agent 智能技术
 
 ---
 
-## 核心场景
+## 💡 核心场景
 
 | 场景 | 示例问题 | 系统处理方式 |
 | --- | --- | --- |
@@ -108,9 +112,9 @@ DevSupport AI 是一个面向 API 开放平台开发者的多 Agent 智能技术
 
 ---
 
-## 技术亮点与实现边界
+## ✨ 技术亮点与实现边界
 
-### 1. 多 Agent DAG 协作编排
+### 🤖 1. 多 Agent DAG 协作编排
 
 不是一个 Prompt 走天下，而是通过 LangGraph 将多个专业 Agent 编排成可追踪的工作流。严格按“实际使用 LLM 执行专业任务”的口径，当前有 4 个 Agent：`IntentRouter`、`DocRAGAgent`、`APIDiagnosticAgent` 和 `BillingAgent`。`Supervisor` 是确定性编排器，工单和安全审查是规则节点，不把它们包装成自主 Agent。
 
@@ -124,37 +128,37 @@ DevSupport AI 是一个面向 API 开放平台开发者的多 Agent 智能技术
 | `ticket_node` | 低置信度或高风险问题自动建单转人工 |
 | `security_node` | 最终安全审查与敏感信息脱敏 |
 
-### 2. 面向真实 API 客服业务建模
+### 🎯 2. 面向真实 API 客服业务建模
 
 项目覆盖 API 接入过程中常见的 401 鉴权失败、403 权限不足、429 限流、签名错误、Webhook 回调失败、账单异常、套餐 QPS 不足和数据质量异常等问题，服务对象是使用开放平台 API 的开发者及技术支持人员。
 
-### 3. 意图路由 + 实体记忆
+### 🧠 3. 意图路由 + 实体记忆
 
 系统会先抽取接口名、错误码、`request_id`、时间范围等关键实体。缺失信息时主动追问；用户补充后写入当前会话记忆，后续无需重复提供。
 
-### 4. RAG 混合检索 + Rerank
+### 🔍 4. RAG 混合检索 + Rerank
 
 文档问答不是简单调用向量库，而是使用 Milvus 向量检索 + BM25 关键词检索 + RRF 融合 + Rerank 精排 + 上下文压缩，最终生成带引用回答。
 
-### 5. 工具调用中心
+### 🧰 5. 工具调用中心
 
 日志查询、API Key 状态查询、错误码查询、账单查询、工单创建等能力统一封装为工具，并加入超时、重试、结果脱敏和高危操作隔离。
 
-### 6. 三层安全脱敏
+### 🛡️ 6. 三层安全脱敏
 
 工具调用参数与结果的审计日志、人工回复和最终输出会进行敏感信息处理，覆盖 API Key、Secret、Token、手机号、邮箱、身份证、银行卡、签名参数等。
 
-### 7. 缓存与性能优化
+### ⚡ 7. 缓存与性能优化
 
 通过语义缓存、路由缓存、错误码热路径直取、多 Agent 并行、链路裁剪、模型分层、上下文压缩等方式降低响应延迟和 Token 用量。
 
-### 8. 全链路可观测与评估
+### 📊 8. 全链路可观测与评估
 
 每轮对话记录意图、实体、Agent 执行路径、节点耗时、Token 消耗、工具调用、RAG 引用、缓存命中和转人工状态，并在前端用 React Flow 展示链路。
 
 ---
 
-## 系统架构
+## 🏗️ 系统架构
 
 ```text
 ┌──────────────────────────────────────────────────────────────┐
@@ -184,7 +188,7 @@ DevSupport AI 是一个面向 API 开放平台开发者的多 Agent 智能技术
 
 ---
 
-## 多 Agent 工作流
+## 🔄 多 Agent 工作流
 
 ```text
 START
@@ -227,7 +231,7 @@ START
 
 ---
 
-## RAG 检索链路
+## 🔍 RAG 检索链路
 
 ```text
 用户问题
@@ -255,7 +259,7 @@ LLM 生成带引用答案
 
 ---
 
-## 项目结构
+## 📂 项目结构
 
 ```text
 DevSupport-AI/
@@ -288,7 +292,7 @@ DevSupport-AI/
 
 ---
 
-## 面试准备资料
+## 🎓 面试准备资料
 
 仓库的 `docs/interview-prep/` 目录同时提供项目相关的面试准备材料，适合研究项目实现细节和准备 Agent 方向面试。
 
@@ -300,7 +304,7 @@ DevSupport-AI/
 
 ---
 
-## 评估与本地基准
+## 📊 评估与本地基准
 
 项目提供可重复运行的本地评估和基准脚本，用于研究 Agent 应用的质量与链路开销：
 
@@ -318,7 +322,7 @@ make bench
 
 ---
 
-## 安全边界与当前限制
+## 🛡️ 安全边界与当前限制
 
 - 高风险工具默认不暴露给 AI；工具调用还会受到租户和角色权限约束。
 - 工具调用参数与结果的审计日志、人工回复和最终输出会经过脱敏处理；当前客户原始消息写入会话表前未统一脱敏，处理真实敏感数据时需要进一步加固。
@@ -329,9 +333,9 @@ make bench
 
 ---
 
-## 快速启动
+## 🚀 快速启动
 
-### 环境要求
+### ⚙️ 环境要求
 
 - Docker + Docker Compose v2
 - Python 3.11+
@@ -340,7 +344,7 @@ make bench
 
 本项目的 Docker Compose 主要用于本地 MySQL、Redis、Milvus、etcd 和 MinIO 基础设施编排，README 提供的是本地运行方式。
 
-### 1. 安装后端依赖
+### 1️⃣ 安装后端依赖
 
 ```bash
 cd backend
@@ -366,7 +370,7 @@ copy .env.example .env
 DASHSCOPE_API_KEY=your_dashscope_api_key
 ```
 
-### 2. 安装前端依赖
+### 2️⃣ 安装前端依赖
 
 ```bash
 cd ../frontend
@@ -374,20 +378,20 @@ npm install
 cd ..
 ```
 
-### 3. 启动基础设施
+### 3️⃣ 启动基础设施
 
 ```bash
 make infra-up
 make infra-status
 ```
 
-### 4. 初始化数据
+### 4️⃣ 初始化数据
 
 ```bash
 make setup
 ```
 
-### 5. 启动服务
+### 5️⃣ 启动服务
 
 ```bash
 make run
@@ -409,7 +413,7 @@ make front
 
 ---
 
-## 常用命令
+## 🛠️ 常用命令
 
 ```bash
 make infra-up       # 启动 MySQL / Redis / Milvus
@@ -440,7 +444,7 @@ npm run dev -- --host 127.0.0.1
 
 ---
 
-## 核心技术栈
+## 🧰 核心技术栈
 
 | 分类 | 技术 | 用途 |
 | --- | --- | --- |
@@ -458,4 +462,8 @@ npm run dev -- --host 127.0.0.1
 | 部署 | Docker Compose | 本地基础设施编排 |
 
 ---
+
+## 📄 许可证
+
+本项目采用 [MIT License](LICENSE)。
 
